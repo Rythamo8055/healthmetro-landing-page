@@ -1,3 +1,5 @@
+import RotatingText from "./RotatingText";
+
 export default function Hero() {
   return (
     <section id="hero" className="relative pt-32 pb-20 px-6 overflow-hidden">
@@ -8,16 +10,28 @@ export default function Hero() {
       </div>
 
       <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-surface rounded-full border border-border mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-          <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-          <span className="text-xs font-bold tracking-widest uppercase text-foreground opacity-70">
-            Connecting Health Globally
-          </span>
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface border border-primary/10 text-primary text-sm font-medium mb-8">
+          <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse" />
+          <span>Trusted by 5,000+ Healthcare Providers</span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 text-primary">
-          Connecting Health <br />
-          <span className="text-secondary">Globally.</span>
+        <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 text-primary flex flex-col items-center">
+          Connecting Health
+          <RotatingText
+            texts={['Globally', 'Reliably', 'Everywhere', 'Seamlessly']}
+            mainClassName="text-secondary overflow-hidden py-1 justify-center rounded-lg"
+            staggerFrom="last"
+            initial={{ y: "100%", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: "-120%", opacity: 0 }}
+            staggerDuration={0.025}
+            splitLevelClassName="overflow-hidden"
+            transition={{ type: "spring", damping: 30, stiffness: 400 }}
+            rotationInterval={2500}
+            splitBy="characters"
+            auto
+            loop
+          />
         </h1>
 
         <p className="text-lg md:text-xl text-foreground opacity-90 leading-relaxed mb-10 max-w-2xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
