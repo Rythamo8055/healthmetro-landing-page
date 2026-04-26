@@ -10,14 +10,11 @@ export default function Header() {
     <header id="main-header" className="fixed top-0 left-0 right-0 z-50 glass">
       <nav className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-            </svg>
-          </div>
-          <span className="text-xl font-bold tracking-tight text-foreground">
-            Health<span className="text-primary">Metro</span>
-          </span>
+          <img 
+            src="/logo.png" 
+            alt="Health Metro Logo" 
+            className="h-12 w-auto object-contain transition-transform group-hover:scale-105"
+          />
         </Link>
 
         {/* Mobile Menu Button - Large for accessibility */}

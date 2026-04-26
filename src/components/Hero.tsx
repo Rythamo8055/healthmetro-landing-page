@@ -15,20 +15,20 @@ export default function Hero() {
           </span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000">
-          World-Class Care <br />
-          <span className="text-primary">At Your Fingertips.</span>
+        <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 text-primary">
+          Connecting Health <br />
+          <span className="text-secondary">Globally.</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-foreground opacity-80 leading-relaxed mb-10 max-w-2xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
+        <p className="text-lg md:text-xl text-foreground opacity-90 leading-relaxed mb-10 max-w-2xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
           Experience ultra-reliable healthcare connectivity designed for everyone, 
-          everywhere. Accessible, simple, and world-class.
+          everywhere. Stable, energetic, and world-class.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-300">
           <button 
             id="hero-cta-primary"
-            className="px-8 py-5 bg-primary text-white rounded-2xl font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-lg shadow-primary/20"
+            className="px-8 py-5 bg-secondary text-white rounded-2xl font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-lg shadow-secondary/20"
           >
             Get Started Today
           </button>
