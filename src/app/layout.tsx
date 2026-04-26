@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -27,6 +28,26 @@ export const metadata: Metadata = {
   },
 };
 
+const medicalOrgSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  "name": "Health Metro",
+  "url": "https://healthmetro.com",
+  "logo": "https://healthmetro.com/logo.png",
+  "description": "Connecting Health Globally with ultra-reliable digital infrastructure.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Health Metro HQ",
+    "addressLocality": "Global",
+    "addressCountry": "Global"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-800-HEALTH",
+    "contactType": "customer service"
+  }
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,29 +58,13 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "MedicalOrganization",
-              "name": "Health Metro",
-              "url": "https://healthmetro.com",
-              "logo": "https://healthmetro.com/logo.png",
-              "description": "Connecting Health Globally with ultra-reliable digital infrastructure.",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Health Metro HQ",
-                "addressLocality": "Global",
-              },
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+1-800-HEALTH",
-                "contactType": "customer service"
-              }
-            })
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalOrgSchema) }}
         />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
