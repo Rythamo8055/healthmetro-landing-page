@@ -15,23 +15,25 @@ export default function Hero() {
           <span>Trusted by 5,000+ Healthcare Providers</span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 text-primary flex flex-col items-center">
-          Connecting Health
-          <RotatingText
-            texts={['Globally', 'Reliably', 'Everywhere', 'Seamlessly']}
-            mainClassName="text-secondary overflow-hidden py-1 justify-center rounded-lg"
-            staggerFrom="last"
-            initial={{ y: "100%", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: "-120%", opacity: 0 }}
-            staggerDuration={0.025}
-            splitLevelClassName="overflow-hidden"
-            transition={{ type: "spring", damping: 30, stiffness: 400 }}
-            rotationInterval={2500}
-            splitBy="characters"
-            auto
-            loop
-          />
+        <h1 className="text-5xl md:text-8xl font-bold leading-[1.1] tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 text-primary">
+          Connecting Health <br className="md:hidden" />
+          <span className="inline-block md:inline">
+            <RotatingText
+              texts={['Globally', 'Reliably', 'Everywhere', 'Seamlessly']}
+              mainClassName="text-secondary overflow-hidden py-1 md:py-2 px-2"
+              staggerFrom="last"
+              initial={{ y: "100%", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: "-120%", opacity: 0 }}
+              staggerDuration={0.025}
+              splitLevelClassName="overflow-hidden"
+              transition={{ type: "spring", damping: 30, stiffness: 400 }}
+              rotationInterval={2500}
+              splitBy="characters"
+              auto
+              loop
+            />
+          </span>
         </h1>
 
         <p className="text-lg md:text-xl text-foreground opacity-90 leading-relaxed mb-10 max-w-2xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
