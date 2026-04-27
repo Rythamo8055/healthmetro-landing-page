@@ -39,6 +39,10 @@ export const metadata: Metadata = {
     description: "World-class healthcare connectivity for everyone, everywhere.",
     images: ["/logo.png"],
   },
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 const medicalOrgSchema = {
