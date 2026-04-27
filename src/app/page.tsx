@@ -4,10 +4,12 @@ import Features from "@/components/Features";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import TopLogo from "@/components/TopLogo";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
+      <TopLogo />
       <Header />
       <main className="flex-grow">
         <Hero />
