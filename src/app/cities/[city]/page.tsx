@@ -46,7 +46,7 @@ export default async function CityPage({ params }: Props) {
       <TopLogo />
       <Header />
       
-      <main className="flex-grow pt-32 pb-20">
+      <main className="flex-grow pt-32 pb-48">
         <section className="max-w-4xl mx-auto px-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 text-primary text-sm font-medium mb-8">
             <MapPin className="w-4 h-4" />

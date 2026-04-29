@@ -57,7 +57,7 @@ export default async function ProductPage({ params }: Props) {
       <TopLogo />
       <Header />
       
-      <main className="flex-grow pt-32 pb-32">
+      <main className="flex-grow pt-32 pb-48">
         <section className="max-w-5xl mx-auto px-6">
           
           {/* Hero Section */}
