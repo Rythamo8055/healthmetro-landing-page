@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import { Activity, MapPin, ShieldCheck, Globe } from "lucide-react";
 
 interface Props {
-  params: { city: string };
+  params: Promise<{ city: string }>;
 }
 
 export async function generateStaticParams() {
@@ -19,7 +19,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const cityData = cities.find((c) => c.slug === params.city);
+  const { city } = await params;
+  const cityData = cities.find((c) => c.slug === city);
   if (!cityData) return {};
 
   return {
@@ -32,8 +33,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function CityPage({ params }: Props) {
-  const cityData = cities.find((c) => c.slug === params.city);
+export default async function CityPage({ params }: Props) {
+  const { city } = await params;
+  const cityData = cities.find((c) => c.slug === city);
 
   if (!cityData) {
     notFound();

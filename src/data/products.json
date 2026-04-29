@@ -4,15 +4,28 @@
     "name": "HM MOVE",
     "title": "Diagnostics & Preventive Testing",
     "slug": "hm-move",
-    "description": "Comprehensive diagnostic testing and preventive healthcare. Book lab visits or home collections with ease.",
+    "description": "The primary entry service for comprehensive diagnostic testing and preventive healthcare. Book tests for yourself, family members, or parents (NRI case).",
     "icon": "Activity",
     "features": [
       "Browse comprehensive diagnostic categories",
-      "Book tests for yourself or family members",
-      "Seamless integration with digital health records",
-      "Real-time tracking of sample and reports"
+      "Book tests for yourself, family members, or parents",
+      "Choose between Home Collection or Lab Visit",
+      "Seamless integration with Digital Health Records"
     ],
-    "flow": ["Select Diagnostics", "Choose Test", "Select Patient", "Choose Collection Type", "Payment", "Report Generated"]
+    "flow": [
+      "User selects Diagnostics",
+      "Browse Diagnostic Categories",
+      "Select Test / Package",
+      "View Test Details",
+      "Choose Patient",
+      "Select Collection Type (Home Collection / Lab Visit)",
+      "Choose Date & Time",
+      "Payment",
+      "Booking Confirmation",
+      "Sample Collection",
+      "Report Generated",
+      "Report Uploaded to Health Record"
+    ]
   },
   {
     "id": "hm-easy",
@@ -23,70 +36,111 @@
     "icon": "Home",
     "features": [
       "Schedule convenient home collection slots",
-      "Certified and trained phlebotomists",
+      "Certified and trained technicians assigned automatically",
       "Strict hygiene and safety protocols",
-      "Direct integration with top diagnostic labs"
+      "Direct integration with top diagnostic labs for processing"
     ],
-    "flow": ["Select Home Collection", "Enter Address", "Choose Date & Time", "Technician Assigned", "Sample Collected", "Report Uploaded"]
+    "flow": [
+      "User selects Home Sample Collection",
+      "Enter Address",
+      "Select Patient",
+      "Choose Date & Time Slot",
+      "Payment",
+      "Booking Confirmed",
+      "Technician Assigned",
+      "Sample Collected",
+      "Lab Processing",
+      "Report Uploaded"
+    ]
   },
   {
     "id": "hm-trust",
     "name": "HM TRUST",
     "title": "Doctor Consultation",
     "slug": "hm-trust",
-    "description": "Consult with top doctors and specialists globally, both online and at home.",
+    "description": "Consult with top doctors and specialists globally. Support for both online consultations and Doctor-at-Home visits.",
     "icon": "Stethoscope",
     "features": [
       "Browse verified doctors by specialty",
-      "Book online consultations or home visits",
-      "Receive digital prescriptions",
+      "Book online consultations or request Doctor-at-Home visits",
+      "Receive digital prescriptions and test recommendations",
       "Direct follow-up on diagnostic reports"
     ],
-    "flow": ["Select Consultation", "Browse Doctors", "Choose Slot", "Consultation Session", "Digital Prescription"]
+    "flow": [
+      "User selects Consultation / Doctor-at-Home",
+      "Browse Doctors & Select Specialty",
+      "View Doctor Profile & Choose Patient",
+      "Enter Address (If Home Visit) or Choose Consultation Slot",
+      "Payment",
+      "Visit Confirmed / Consultation Session",
+      "Doctor Advice & Assessment",
+      "Prescription / Test Recommendation (Redirects to Diagnostics)"
+    ]
   },
   {
     "id": "hm-rely",
     "name": "HM RELY",
     "title": "NRI Parent Care",
     "slug": "hm-rely",
-    "description": "Dedicated healthcare management for NRI parents living in India.",
+    "description": "Dedicated healthcare management for NRIs managing healthcare for parents living in India.",
     "icon": "HeartHandshake",
     "features": [
-      "Manage parent profiles and medical history remotely",
-      "Book diagnostics, home care, and doctor visits for parents",
+      "Create and manage Parent Profiles from abroad",
+      "Book diagnostics, home care, and doctor visits for parents in India",
       "Receive real-time notifications on parent's health updates",
-      "Access and share parent's digital health records"
+      "Access and share parent's digital health records instantly"
     ],
-    "flow": ["NRI Login", "Add Parent Profile", "Book Service in India", "Service Delivered", "NRI Receives Notification"]
+    "flow": [
+      "NRI User Login",
+      "Add Parent Profile & Enter Address in India",
+      "Parent Dashboard Created",
+      "Select Parent",
+      "Choose Service (Diagnostics / Home Collection / Doctor / Consultation)",
+      "Book Service & Payment",
+      "Service Delivered",
+      "Reports Uploaded",
+      "NRI Receives Notification"
+    ]
   },
   {
     "id": "hm-ohr",
     "name": "HM OHR",
     "title": "Digital Health Records",
     "slug": "hm-ohr",
-    "description": "Secure, centralized storage for all your family's medical reports and prescriptions.",
+    "description": "Secure, centralized digital storage for all your family's medical reports and health history.",
     "icon": "ClipboardList",
     "features": [
       "Automatic upload of HealthMetro diagnostic reports",
-      "Secure access and sharing with doctors",
-      "Manage records for yourself, family, and parents",
-      "End-to-end encryption for privacy"
+      "Securely View, Download, or Share records",
+      "Manage records for yourself, family, and parents in one place",
+      "Maintains a complete digital health history"
     ],
-    "flow": ["Report Generated", "Uploaded to Platform", "Linked to Profile", "View/Share with Doctor"]
+    "flow": [
+      "Report Generated",
+      "Report Uploaded to Platform",
+      "Linked to Patient Profile",
+      "User Access (Dashboard)",
+      "View / Download / Share"
+    ]
   },
   {
     "id": "hm-clin",
     "name": "HM CLIN",
     "title": "Clinical Research Support",
     "slug": "hm-clin",
-    "description": "Participate in global clinical studies and contribute to medical advancements.",
+    "description": "Explore and participate in global clinical studies to contribute to medical advancements.",
     "icon": "Microscope",
     "features": [
-      "Discover available clinical studies",
-      "Read detailed study requirements and benefits",
-      "Secure application process",
-      "Contribute to global healthcare research"
+      "Discover available clinical research studies",
+      "Read detailed study requirements, objectives, and benefits",
+      "Secure and straightforward application process",
+      "Contribute to global healthcare research safely"
     ],
-    "flow": ["Open Clinical Research", "View Available Studies", "Read Details", "Apply for Participation"]
+    "flow": [
+      "User opens Clinical Research",
+      "View Available Studies",
+      "Read Study Details",
+      "Apply for Participation"
+    ]
   }
 ]

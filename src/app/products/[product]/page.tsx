@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import { Activity, Home, Stethoscope, HeartHandshake, ClipboardList, Microscope, ArrowRight, CheckCircle2 } from "lucide-react";
 
 interface Props {
-  params: { product: string };
+  params: Promise<{ product: string }>;
 }
 
 export async function generateStaticParams() {
@@ -18,7 +18,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const productData = products.find((p) => p.slug === params.product);
+  const { product } = await params;
+  const productData = products.find((p) => p.slug === product);
   if (!productData) return {};
 
   return {
@@ -43,8 +44,9 @@ const getIcon = (iconName: string) => {
   }
 };
 
-export default function ProductPage({ params }: Props) {
-  const productData = products.find((p) => p.slug === params.product);
+export default async function ProductPage({ params }: Props) {
+  const { product } = await params;
+  const productData = products.find((p) => p.slug === product);
 
   if (!productData) {
     notFound();
