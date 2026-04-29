@@ -1,0 +1,92 @@
+[
+  {
+    "id": "hm-move",
+    "name": "HM MOVE",
+    "title": "Diagnostics & Preventive Testing",
+    "slug": "hm-move",
+    "description": "Comprehensive diagnostic testing and preventive healthcare. Book lab visits or home collections with ease.",
+    "icon": "Activity",
+    "features": [
+      "Browse comprehensive diagnostic categories",
+      "Book tests for yourself or family members",
+      "Seamless integration with digital health records",
+      "Real-time tracking of sample and reports"
+    ],
+    "flow": ["Select Diagnostics", "Choose Test", "Select Patient", "Choose Collection Type", "Payment", "Report Generated"]
+  },
+  {
+    "id": "hm-easy",
+    "name": "HM EASY",
+    "title": "Home Sample Collection",
+    "slug": "hm-easy",
+    "description": "Get your medical samples collected from the comfort of your home by certified professionals.",
+    "icon": "Home",
+    "features": [
+      "Schedule convenient home collection slots",
+      "Certified and trained phlebotomists",
+      "Strict hygiene and safety protocols",
+      "Direct integration with top diagnostic labs"
+    ],
+    "flow": ["Select Home Collection", "Enter Address", "Choose Date & Time", "Technician Assigned", "Sample Collected", "Report Uploaded"]
+  },
+  {
+    "id": "hm-trust",
+    "name": "HM TRUST",
+    "title": "Doctor Consultation",
+    "slug": "hm-trust",
+    "description": "Consult with top doctors and specialists globally, both online and at home.",
+    "icon": "Stethoscope",
+    "features": [
+      "Browse verified doctors by specialty",
+      "Book online consultations or home visits",
+      "Receive digital prescriptions",
+      "Direct follow-up on diagnostic reports"
+    ],
+    "flow": ["Select Consultation", "Browse Doctors", "Choose Slot", "Consultation Session", "Digital Prescription"]
+  },
+  {
+    "id": "hm-rely",
+    "name": "HM RELY",
+    "title": "NRI Parent Care",
+    "slug": "hm-rely",
+    "description": "Dedicated healthcare management for NRI parents living in India.",
+    "icon": "HeartHandshake",
+    "features": [
+      "Manage parent profiles and medical history remotely",
+      "Book diagnostics, home care, and doctor visits for parents",
+      "Receive real-time notifications on parent's health updates",
+      "Access and share parent's digital health records"
+    ],
+    "flow": ["NRI Login", "Add Parent Profile", "Book Service in India", "Service Delivered", "NRI Receives Notification"]
+  },
+  {
+    "id": "hm-ohr",
+    "name": "HM OHR",
+    "title": "Digital Health Records",
+    "slug": "hm-ohr",
+    "description": "Secure, centralized storage for all your family's medical reports and prescriptions.",
+    "icon": "ClipboardList",
+    "features": [
+      "Automatic upload of HealthMetro diagnostic reports",
+      "Secure access and sharing with doctors",
+      "Manage records for yourself, family, and parents",
+      "End-to-end encryption for privacy"
+    ],
+    "flow": ["Report Generated", "Uploaded to Platform", "Linked to Profile", "View/Share with Doctor"]
+  },
+  {
+    "id": "hm-clin",
+    "name": "HM CLIN",
+    "title": "Clinical Research Support",
+    "slug": "hm-clin",
+    "description": "Participate in global clinical studies and contribute to medical advancements.",
+    "icon": "Microscope",
+    "features": [
+      "Discover available clinical studies",
+      "Read detailed study requirements and benefits",
+      "Secure application process",
+      "Contribute to global healthcare research"
+    ],
+    "flow": ["Open Clinical Research", "View Available Studies", "Read Details", "Apply for Participation"]
+  }
+]
