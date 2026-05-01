@@ -1,6 +1,11 @@
+"use client";
+
+import Link from "next/link";
 import RotatingText from "./RotatingText";
+import { useModal } from "@/context/ModalContext";
 
 export default function Hero() {
+  const { openModal } = useModal();
   return (
     <section id="hero" className="relative pt-32 pb-20 px-6 overflow-hidden">
       {/* Background Accents */}
@@ -10,11 +15,6 @@ export default function Hero() {
       </div>
 
       <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface border border-primary/10 text-primary text-sm font-medium mb-8">
-          <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse" />
-          <span>Trusted by 5,000+ Healthcare Providers</span>
-        </div>
-
         <h1 className="text-5xl md:text-8xl font-bold leading-[1.1] tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 text-primary">
           Connecting Health <br className="md:hidden" />
           <span className="inline-block md:inline">
@@ -37,39 +37,25 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-foreground opacity-90 leading-relaxed mb-10 max-w-2xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
-          Experience ultra-reliable healthcare connectivity designed for everyone, 
-          everywhere. Stable, energetic, and world-class.
+          Affordable, accessible diagnostic and healthcare services — delivered at home,
+          at a centre near you, or through a trusted doctor referral.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-300">
-          <button 
-            id="hero-cta-primary"
-            className="px-8 py-5 bg-secondary text-white rounded-2xl font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-lg shadow-secondary/20"
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-fade-in-up mt-8">
+          <button
+            onClick={() => openModal("contact")}
+            id="hero-cta-book"
+            className="px-8 py-5 bg-secondary text-white rounded-2xl font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-xl shadow-secondary/20 text-center"
           >
-            Get Started Today
+            Book Appointment
           </button>
-          <button 
-            id="hero-cta-secondary"
-            className="px-8 py-5 bg-white text-foreground border border-border rounded-2xl font-bold text-lg hover:bg-surface transition-all"
+          <Link
+            href="#about"
+            id="hero-cta-about"
+            className="px-8 py-5 bg-white text-foreground border border-border rounded-2xl font-bold text-lg hover:bg-surface transition-all text-center"
           >
-            How it works
-          </button>
-        </div>
-
-        {/* Scalable Network Stats - Inspired by Cloudflare */}
-        <div className="mt-20 pt-10 border-t border-border w-full flex flex-wrap justify-center gap-12 md:gap-24 opacity-60">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-foreground">330+</div>
-            <div className="text-xs uppercase tracking-widest font-bold">Cities Connected</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-foreground">99.9%</div>
-            <div className="text-xs uppercase tracking-widest font-bold">Uptime Reliable</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-foreground">24/7</div>
-            <div className="text-xs uppercase tracking-widest font-bold">Support Ready</div>
-          </div>
+            About Health Metro
+          </Link>
         </div>
       </div>
     </section>
