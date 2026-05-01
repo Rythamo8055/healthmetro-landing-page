@@ -90,34 +90,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Health Metro?",
+      "name": "Do you offer Home Sample Collection?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Health Metro is a global healthcare connectivity platform that bridges the gap between patients and world-class specialists using ultra-reliable digital infrastructure."
+        "text": "Yes, our HM EASY service provides secure and hygienic home sample collection by certified phlebotomists. You can select your preferred time slot, and the samples will be processed at NABL-accredited partner labs."
       }
     },
     {
       "@type": "Question",
-      "name": "How does Health Metro connect health globally?",
+      "name": "How long does it take to get my reports?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We utilize a decentralized network of medical servers and secure data pipelines to ensure that patient records and consultations are available in 330+ cities worldwide without latency."
+        "text": "Most routine diagnostic reports are generated within 24 to 48 hours. Once ready, they are automatically uploaded to your HM OHR (Digital Health Records) account, where you can view, download, or share them securely."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Health Metro reliable for emergency medical records?",
+      "name": "I am an NRI. Can I book tests or doctor visits for my parents in India?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Health Metro is built with 99.9% uptime reliability and end-to-end encryption, ensuring that emergency responders can access life-saving data instantly and securely."
-      },
+        "text": "Absolutely. With our HM RELY service, you can create a profile for your parents, book tests or doctor consultations for them anywhere in India, and receive real-time notifications and access to their health records from abroad."
+      }
     },
     {
       "@type": "Question",
-      "name": "Who can use Health Metro?",
+      "name": "Are your doctors available for online consultations?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Health Metro is designed for everyone—from individual patients and families to healthcare providers and global medical organizations seeking seamless connectivity."
+        "text": "Yes, our HM TRUST service connects you with verified specialists for both online video consultations and Doctor-at-Home visits. You will also receive digital prescriptions directly in your app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are my medical records secure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Security is our highest priority. The HM OHR system uses end-to-end encryption to store your family's health history safely. Only authorized users and your consulting doctors can access your data."
       }
     }
   ]
