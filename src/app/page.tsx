@@ -12,7 +12,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <TopLogo />
       <Header />
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow">
         <Hero />
         <Testimonials />
         <Features />

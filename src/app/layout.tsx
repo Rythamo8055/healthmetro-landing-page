@@ -147,6 +147,13 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
+        {/* Skip to main content — visible only on keyboard focus */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-5 focus:py-3 focus:bg-primary focus:text-white focus:rounded-xl focus:font-bold focus:shadow-xl focus:outline-none focus:ring-2 focus:ring-white"
+        >
+          Skip to main content
+        </a>
         <Providers>
           {children}
           <Analytics />
