@@ -14,13 +14,11 @@ export default function ContactModal() {
   };
 
   return (
-    <div className="p-6 md:p-8">
+    <div className="p-6 md:p-8 flex flex-col flex-1 min-h-0 overflow-y-auto custom-scrollbar">
       {/* Header */}
-      <div className="flex justify-between items-start mb-8">
-        <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2">Book Appointment</h2>
-          <p className="text-foreground opacity-60 text-sm md:text-base">We&apos;ll confirm within hours.</p>
-        </div>
+      <div className="mb-6">
+        <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2">Book Appointment</h2>
+        <p className="text-foreground opacity-60 text-sm md:text-base">We&apos;ll confirm within hours.</p>
       </div>
 
       {submitted ? (

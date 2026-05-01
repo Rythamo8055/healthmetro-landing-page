@@ -13,19 +13,19 @@ import { useModal } from "@/context/ModalContext";
 
 // Shared style constants
 const ICON_WRAP =
-  "p-2.5 sm:p-3 bg-primary/5 text-primary rounded-xl transition-all duration-200 " +
+  "p-1.5 sm:p-3 bg-primary/5 text-primary rounded-xl transition-all duration-200 " +
   "active:scale-95 group-hover:bg-primary group-hover:text-white group-hover:shadow-[0_8px_20px_rgba(2,116,115,0.35)] " +
   "group-focus-visible:bg-primary group-focus-visible:text-white group-focus-visible:shadow-[0_8px_20px_rgba(2,116,115,0.35)]";
 
 const LABEL_CLS =
-  "text-[9px] sm:text-[10px] font-semibold text-primary/70 group-hover:text-primary " +
+  "text-[8px] sm:text-[10px] font-semibold text-primary/70 group-hover:text-primary " +
   "group-focus-visible:text-primary transition-colors leading-none mt-1 select-none";
 
 const BTN_CLS =
-  "group flex flex-col items-center gap-0 rounded-xl flex-shrink-0 " +
+  "group flex flex-col items-center gap-0 rounded-xl flex-shrink-0 min-w-[34px] sm:min-w-[48px] " +
   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white";
 
-const ICON_SIZE = "w-5 h-5 sm:w-[22px] sm:h-[22px]";
+const ICON_SIZE = "w-4 h-4 sm:w-[22px] sm:h-[22px]";
 
 interface DockItemProps {
   onClick: () => void;
@@ -61,7 +61,7 @@ export default function Header() {
       <div className="pointer-events-auto">
         <nav
           aria-label="Services and booking"
-          className="flex items-end gap-1 sm:gap-2 md:gap-3 px-3 sm:px-4 md:px-5 pt-2.5 pb-2.5 bg-white/90 backdrop-blur-3xl rounded-[2rem] md:rounded-[2.5rem] border border-primary/15 shadow-[0_16px_48px_rgba(2,116,115,0.15)] ring-1 ring-white/60"
+          className="flex items-end gap-0.5 sm:gap-2 md:gap-3 px-1.5 sm:px-4 md:px-5 pt-2 pb-2 sm:pt-2.5 sm:pb-2.5 bg-white/90 backdrop-blur-3xl rounded-[2rem] md:rounded-[2.5rem] border border-primary/15 shadow-[0_16px_48px_rgba(2,116,115,0.15)] ring-1 ring-white/60 w-[calc(100vw-1rem)] md:w-auto justify-between md:justify-start"
         >
           {/* HM MOVE */}
           <DockItem
@@ -100,11 +100,11 @@ export default function Header() {
             title="Book an Appointment"
             className="group flex flex-col items-center gap-0 rounded-xl flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           >
-            <div className="p-2.5 sm:p-3 bg-secondary text-white rounded-xl shadow-md transition-all duration-200 active:scale-95 group-hover:shadow-[0_8px_20px_rgba(217,114,52,0.45)] group-focus-visible:shadow-[0_8px_20px_rgba(217,114,52,0.45)]">
+            <div className="p-2 sm:p-3 bg-secondary text-white rounded-xl shadow-md transition-all duration-200 active:scale-95 group-hover:shadow-[0_8px_20px_rgba(217,114,52,0.45)] group-focus-visible:shadow-[0_8px_20px_rgba(217,114,52,0.45)]">
               <Phone className={ICON_SIZE} strokeWidth={2.5} aria-hidden="true" />
             </div>
             <span
-              className="text-[9px] sm:text-[10px] font-bold text-secondary leading-none mt-1 select-none"
+              className="text-[8px] sm:text-[10px] font-bold text-secondary leading-none mt-1 select-none"
               aria-hidden="true"
             >
               BOOK

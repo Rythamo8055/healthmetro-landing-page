@@ -11,7 +11,7 @@ export default function ProductModal() {
   if (!product) return null;
 
   return (
-    <div className="p-6 md:p-8 flex flex-col h-full">
+    <div className="p-6 md:p-8 flex flex-col flex-1 min-h-0 overflow-hidden">
       {/* Header */}
       <div className="flex justify-between items-start mb-6">
         <div>

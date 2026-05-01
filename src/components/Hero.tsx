@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section id="hero" className="relative pt-32 pb-20 px-6 overflow-hidden">
       <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 text-foreground">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 text-foreground">
           Connecting Health <br className="md:hidden" />
           <span className="inline-block md:inline mt-2 md:mt-0">
             <RotatingText

@@ -2,16 +2,16 @@
 
 import CircularGallery from "./CircularGallery";
 
-// Healthcare-relevant images for the gallery
+// High-quality medical and wellness images from Unsplash
 const galleryItems = [
-  { image: "https://picsum.photos/seed/hm-home/800/600", text: "Home Collection" },
-  { image: "https://picsum.photos/seed/hm-lab/800/600", text: "Lab Reports" },
-  { image: "https://picsum.photos/seed/hm-doctor/800/600", text: "Doctor Consult" },
-  { image: "https://picsum.photos/seed/hm-records/800/600", text: "Health Records" },
-  { image: "https://picsum.photos/seed/hm-nri/800/600", text: "NRI Care" },
-  { image: "https://picsum.photos/seed/hm-diag/800/600", text: "Diagnostics" },
-  { image: "https://picsum.photos/seed/hm-path/800/600", text: "Pathology" },
-  { image: "https://picsum.photos/seed/hm-well/800/600", text: "Wellness" },
+  { image: "https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&w=800&q=80", text: "Home Collection" },
+  { image: "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80", text: "Lab Reports" },
+  { image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80", text: "Doctor Consult" },
+  { image: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=800&q=80", text: "Health Records" },
+  { image: "https://images.unsplash.com/photo-1581579205702-c6e151c92174?auto=format&fit=crop&w=800&q=80", text: "NRI Care" },
+  { image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80", text: "Diagnostics" },
+  { image: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=800&q=80", text: "Pathology" },
+  { image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80", text: "Wellness" },
 ];
 
 export default function Testimonials() {
@@ -31,7 +31,8 @@ export default function Testimonials() {
         <CircularGallery
           items={galleryItems}
           bend={1}
-          textColor="#ffffff"
+          textColor="#0f172a"
+          font="bold 44px system-ui, sans-serif"
           borderRadius={0.05}
           scrollSpeed={2}
           scrollEase={0.05}
