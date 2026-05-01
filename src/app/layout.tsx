@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Providers from "@/components/Providers";
 
 const inter = Inter({
@@ -150,6 +151,7 @@ export default function RootLayout({
         <Providers>
           {children}
           <Analytics />
+          <SpeedInsights />
         </Providers>
       </body>
     </html>
