@@ -8,19 +8,13 @@ export default function Hero() {
   const { openModal } = useModal();
   return (
     <section id="hero" className="relative pt-32 pb-20 px-6 overflow-hidden">
-      {/* Background Accents */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-full -z-10 opacity-20 pointer-events-none">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-primary rounded-full blur-[120px]" />
-        <div className="absolute bottom-20 right-10 w-64 h-64 bg-secondary rounded-full blur-[120px]" />
-      </div>
-
       <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-        <h1 className="text-5xl md:text-8xl font-bold leading-[1.1] tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 text-primary">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight mb-8 animate-in fade-in slide-in-from-bottom-6 duration-1000 text-foreground">
           Connecting Health <br className="md:hidden" />
-          <span className="inline-block md:inline">
+          <span className="inline-block md:inline mt-2 md:mt-0">
             <RotatingText
-              texts={['Globally', 'Reliably', 'Everywhere', 'Seamlessly']}
-              mainClassName="text-secondary overflow-hidden py-1 md:py-2 px-2"
+              texts={['Globally.', 'Reliably.', 'Everywhere.', 'Seamlessly.']}
+              mainClassName="text-primary overflow-hidden py-1 md:py-2 px-2"
               staggerFrom="last"
               initial={{ y: "100%", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -36,7 +30,7 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p className="text-lg md:text-xl text-foreground opacity-90 leading-relaxed mb-10 max-w-2xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
+        <p className="text-lg md:text-2xl text-foreground/80 leading-relaxed mb-10 max-w-2xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200 font-medium">
           Affordable, accessible diagnostic and healthcare services — delivered at home,
           at a centre near you, or through a trusted doctor referral.
         </p>

@@ -160,50 +160,42 @@ export default function Features() {
           </p>
         </div>
 
-        {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {services.map((service) => (
+        {/* Primary Services (Top 2) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          {services.slice(0, 2).map((service) => (
             <div
               key={service.id}
               id={service.id}
+              onClick={() => openModal("product", service.id)}
               className={`
-                group relative bg-surface rounded-3xl border p-8 transition-all duration-300
-                cursor-pointer overflow-hidden
-                ${service.accent} ${service.span}
-                ${activeId === service.id ? "shadow-xl scale-[1.01]" : "shadow-sm hover:shadow-lg hover:scale-[1.005]"}
+                group relative bg-surface rounded-[2rem] border p-8 md:p-10 transition-all duration-300
+                cursor-pointer hover:border-primary/40 hover:shadow-lg
               `}
-              onMouseEnter={() => setActiveId(service.id)}
-              onMouseLeave={() => setActiveId(null)}
             >
-              {/* Subtle background glow on hover */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                <div className={`absolute -top-10 -right-10 w-40 h-40 rounded-full blur-3xl ${service.color.replace('text-', 'bg-').split(' ')[0]} opacity-30`} />
-              </div>
-
               {/* Badge + Icon row */}
-              <div className="flex items-center justify-between mb-6">
-                <span className={`text-[10px] font-black uppercase tracking-[0.2em] px-3 py-1.5 rounded-full ${service.badge}`}>
+              <div className="flex items-center justify-between mb-8">
+                <span className={`text-[11px] font-bold uppercase tracking-[0.15em] px-3.5 py-1.5 rounded-full bg-white border border-border text-foreground shadow-sm`}>
                   {service.name}
                 </span>
-                <div className={`w-12 h-12 rounded-2xl ${service.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-14 h-14 rounded-2xl ${service.color} flex items-center justify-center`}>
                   {service.icon}
                 </div>
               </div>
 
               {/* Title + Description */}
-              <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 leading-snug">
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 leading-snug group-hover:text-primary transition-colors">
                 {service.title}
               </h3>
-              <p className="text-foreground opacity-60 leading-relaxed text-sm md:text-base mb-6">
+              <p className="text-foreground/70 leading-relaxed text-base md:text-lg mb-8">
                 {service.description}
               </p>
 
               {/* Feature list */}
-              <ul className="space-y-2 mb-8">
+              <ul className="space-y-3 mb-10">
                 {service.features.map((f) => (
-                  <li key={f} className="flex items-center gap-2 text-sm text-foreground opacity-70">
-                    <span className={`flex-shrink-0 w-4 h-4 rounded-full ${service.badge} flex items-center justify-center`}>
-                      <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
+                  <li key={f} className="flex items-center gap-3 text-base text-foreground/80 font-medium">
+                    <span className={`flex-shrink-0 w-5 h-5 rounded-full ${service.color} flex items-center justify-center`}>
+                      <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M20 6L9 17l-5-5" />
                       </svg>
                     </span>
@@ -213,16 +205,40 @@ export default function Features() {
               </ul>
 
               {/* CTA */}
-              <button
-                onClick={() => openModal("product", service.id)}
-                className={`inline-flex items-center gap-2 text-sm font-bold transition-all ${service.color.split(" ")[1]} hover:gap-3`}
-                aria-label={`Learn more about ${service.title}`}
-              >
-                Learn more
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <div className="flex items-center gap-2 text-primary font-bold transition-all group-hover:gap-3">
+                Explore {service.name.split(' ')[1]}
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
-              </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Secondary Services (Remaining 4) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {services.slice(2).map((service) => (
+            <div
+              key={service.id}
+              id={service.id}
+              onClick={() => openModal("product", service.id)}
+              className="group bg-white rounded-2xl border border-border p-6 transition-all duration-300 cursor-pointer hover:border-border/80 hover:shadow-md hover:bg-surface"
+            >
+              <div className={`w-10 h-10 rounded-xl ${service.color} flex items-center justify-center mb-5`}>
+                {service.icon}
+              </div>
+              <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                {service.title}
+              </h3>
+              <p className="text-foreground/60 leading-snug text-sm mb-4 line-clamp-3">
+                {service.description}
+              </p>
+              <div className="flex items-center gap-1.5 text-sm font-semibold text-foreground/50 transition-all group-hover:text-primary">
+                Learn more
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-0 -translate-x-2 transition-all group-hover:opacity-100 group-hover:translate-x-0">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
             </div>
           ))}
         </div>
