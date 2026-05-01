@@ -10,21 +10,7 @@ export default function Footer() {
     <footer className="bg-primary text-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Pre-Footer CTA */}
-        <div className="bg-white/5 rounded-3xl p-8 md:p-12 mb-16 flex flex-col md:flex-row items-center justify-between gap-8 border border-white/10">
-          <div>
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">Ready to prioritize your health?</h3>
-            <p className="text-white/60">Book an appointment or a home collection today.</p>
-          </div>
-          <button
-            onClick={() => openModal("contact")}
-            className="inline-flex items-center gap-3 px-8 py-4 bg-secondary text-white rounded-2xl font-bold text-base hover:scale-105 active:scale-95 transition-all shadow-lg shadow-secondary/20 whitespace-nowrap"
-          >
-            Book an Appointment
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
+
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
 

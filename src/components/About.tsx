@@ -71,15 +71,7 @@ export default function About() {
               We connect patients with certified labs, trained professionals, and specialist doctors
               — all through a single platform designed for the Indian family.
             </p>
-            <button
-              onClick={() => openModal("contact")}
-              className="inline-flex items-center gap-3 px-7 py-4 bg-secondary text-white rounded-2xl font-bold text-base hover:scale-105 active:scale-95 transition-all shadow-lg shadow-secondary/20"
-            >
-              Book an Appointment
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </button>
+
           </div>
 
           {/* Right: stats */}

@@ -243,18 +243,7 @@ export default function Features() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-14 text-center">
-          <button
-            onClick={() => openModal("contact")}
-            className="inline-flex items-center gap-3 px-8 py-5 bg-secondary text-white rounded-2xl font-bold text-lg hover:scale-105 active:scale-95 transition-all shadow-lg shadow-secondary/20"
-          >
-            Book an Appointment
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
+
 
       </div>
     </section>
