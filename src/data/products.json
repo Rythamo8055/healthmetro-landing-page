@@ -1,146 +1,174 @@
 [
   {
     "id": "hm-move",
-    "name": "HM MOVE",
-    "title": "Diagnostics & Preventive Testing",
+    "name": "HM MOVE – Diagnostics",
+    "title": "Specialty Diagnostics & Precision Health Access",
     "slug": "hm-move",
-    "description": "The primary entry service for comprehensive diagnostic testing and preventive healthcare. Book tests for yourself, family members, or parents (NRI case).",
+    "description": "HM Move is an advanced diagnostics gateway designed for those who seek more than routine testing. Through an exclusive network of globally accredited laboratories and specialized scientific partners, we provide access to cutting-edge diagnostic capabilities at the forefront of modern medicine.\n\nEngineered for precision, HM Move delivers deep clinical intelligence, early risk detection, and predictive health insights—enabling a more informed, proactive approach to lifelong health.",
     "icon": "Activity",
     "features": [
-      "Browse comprehensive diagnostic categories",
-      "Book tests for yourself, family members, or parents",
-      "Choose between Home Collection or Lab Visit",
-      "Seamless integration with Digital Health Records"
+      "Curated access to advanced and specialty diagnostic ecosystems",
+      "Integrated metabolomics, genomics & multi-omics capabilities",
+      "Early detection with predictive health intelligence",
+      "Global network of niche and accredited laboratory partners",
+      "Insight-driven digital reports designed for clinical clarity"
     ],
     "flow": [
-      "User selects Diagnostics",
-      "Browse Diagnostic Categories",
-      "Select Test / Package",
-      "View Test Details",
-      "Choose Patient",
-      "Select Collection Type (Home Collection / Lab Visit)",
-      "Choose Date & Time",
-      "Payment",
-      "Booking Confirmation",
-      "Sample Collection",
-      "Report Generated",
-      "Report Uploaded to Health Record"
+      "Specialty Diagnostics Access",
+      "Global Lab Network",
+      "Precision Intelligence",
+      "Early Risk Detection",
+      "Digital Clinical Reports"
+    ]
+  },
+  {
+    "id": "metabolomics",
+    "name": "Metabolomics",
+    "title": "Biochemical Health Signals",
+    "slug": "metabolomics",
+    "description": "A sophisticated exploration of your body’s biochemical activity—revealing health signals at the most fundamental, cellular level.",
+    "icon": "Target",
+    "features": [
+      "Identifies disease signals before symptoms emerge",
+      "Advanced cellular and metabolic pathway intelligence",
+      "Uncovers subtle imbalances often missed in routine testing",
+      "Enables truly proactive, preventive health strategies"
+    ],
+    "flow": [
+      "Cellular Activity Analysis",
+      "Biochemical Mapping",
+      "Disease Signal Detection",
+      "Proactive Health Strategy"
+    ]
+  },
+  {
+    "id": "multi-omics",
+    "name": "Multi-Omics Solutions",
+    "title": "Intelligent View of Human Health",
+    "slug": "multi-omics",
+    "description": "A unified, multi-layered approach combining genomics, proteomics, and metabolomics to deliver a complete, intelligent view of human health.",
+    "icon": "Layers",
+    "features": [
+      "Comprehensive biological data integration",
+      "Precision medicine at a systems level",
+      "Deep correlation of genetic, protein, and metabolic markers",
+      "Enhanced clinical insight for personalized care decisions"
+    ],
+    "flow": [
+      "Unified Biological Data",
+      "Multi-layered Integration",
+      "Systems Level Precision",
+      "Enhanced Clinical Insights"
+    ]
+  },
+  {
+    "id": "genomics",
+    "name": "Genomics",
+    "title": "Genetic Blueprint Insights",
+    "slug": "genomics",
+    "description": "A refined understanding of your genetic blueprint—unlocking insights into inherited risks and future health trajectories.",
+    "icon": "Dna",
+    "features": [
+      "Advanced genetic risk and predisposition analysis",
+      "Identification of hereditary health conditions",
+      "Long-term health forecasting and planning",
+      "Personalized, preventive healthcare strategies"
+    ],
+    "flow": [
+      "Genetic Blueprint Mapping",
+      "Hereditary Risk Analysis",
+      "Long-term Forecasting",
+      "Preventive Planning"
     ]
   },
   {
     "id": "hm-easy",
-    "name": "HM EASY",
-    "title": "Home Sample Collection",
+    "name": "HM EASY – Home Collection",
+    "title": "Doorstep Sample Collection",
     "slug": "hm-easy",
-    "description": "Get your medical samples collected from the comfort of your home by certified professionals.",
+    "description": "HM Easy redefines convenience in diagnostics by delivering professional, discreet, and clinically precise sample collection services directly to your home—ensuring comfort without compromise.",
     "icon": "Home",
     "features": [
-      "Schedule convenient home collection slots",
-      "Certified and trained technicians assigned automatically",
-      "Strict hygiene and safety protocols",
-      "Direct integration with top diagnostic labs for processing"
+      "Certified and highly trained phlebotomy professionals",
+      "Flexible scheduling tailored to your lifestyle",
+      "Strict adherence to hygiene and clinical safety standards",
+      "Seamless coordination with advanced diagnostic laboratories",
+      "Reliable, accurate, and timely sample handling"
     ],
     "flow": [
-      "User selects Home Sample Collection",
-      "Enter Address",
-      "Select Patient",
-      "Choose Date & Time Slot",
-      "Payment",
-      "Booking Confirmed",
-      "Technician Assigned",
-      "Sample Collected",
-      "Lab Processing",
-      "Report Uploaded"
+      "Convenient Scheduling",
+      "Professional Phlebotomy",
+      "Clinical Safety Standards",
+      "Timely Sample Handling",
+      "Accurate Lab Results"
     ]
   },
   {
     "id": "hm-trust",
-    "name": "HM TRUST",
-    "title": "Doctor Consultation",
+    "name": "HM TRUST – Doctor Home Visits",
+    "title": "Medical Care at Your Doorstep",
     "slug": "hm-trust",
-    "description": "Consult with top doctors and specialists globally. Support for both online consultations and Doctor-at-Home visits.",
+    "description": "HM Trust brings clinical excellence to your home, offering access to experienced and qualified doctors who deliver personalized, attentive medical care in a familiar environment.",
     "icon": "Stethoscope",
     "features": [
-      "Browse verified doctors by specialty",
-      "Book online consultations or request Doctor-at-Home visits",
-      "Receive digital prescriptions and test recommendations",
-      "Direct follow-up on diagnostic reports"
+      "Doctor-at-home consultations with experienced practitioners",
+      "Comprehensive physical evaluation and diagnosis",
+      "Personalized prescriptions and treatment guidance",
+      "Ongoing follow-up and care coordination",
+      "A patient-first, high-touch care experience"
     ],
     "flow": [
-      "User selects Consultation / Doctor-at-Home",
-      "Browse Doctors & Select Specialty",
-      "View Doctor Profile & Choose Patient",
-      "Enter Address (If Home Visit) or Choose Consultation Slot",
-      "Payment",
-      "Visit Confirmed / Consultation Session",
-      "Doctor Advice & Assessment",
-      "Prescription / Test Recommendation (Redirects to Diagnostics)"
+      "Experienced Doctor Visit",
+      "Physical Evaluation",
+      "Personalized Prescription",
+      "Care Coordination",
+      "Patient-first Follow-up"
     ]
   },
   {
     "id": "hm-rely",
-    "name": "HM RELY",
-    "title": "NRI Parent Care",
+    "name": "HM RELY – NRI Care",
+    "title": "Healthcare Management for Families in India",
     "slug": "hm-rely",
-    "description": "Dedicated healthcare management for NRIs managing healthcare for parents living in India.",
+    "description": "HM Rely offers a refined healthcare management experience for Non-Resident Indians—ensuring that loved ones in India receive consistent, coordinated, and high-quality care with complete transparency.",
     "icon": "HeartHandshake",
     "features": [
-      "Create and manage Parent Profiles from abroad",
-      "Book diagnostics, home care, and doctor visits for parents in India",
-      "Receive real-time notifications on parent's health updates",
-      "Access and share parent's digital health records instantly"
+      "End-to-end management of family healthcare needs",
+      "Integrated diagnostics, doctor visits, and home care services",
+      "Real-time updates and structured health reporting",
+      "Dedicated care coordination and support",
+      "Confidence and peace of mind—no matter where you are"
     ],
     "flow": [
-      "NRI User Login",
-      "Add Parent Profile & Enter Address in India",
-      "Parent Dashboard Created",
-      "Select Parent",
-      "Choose Service (Diagnostics / Home Collection / Doctor / Consultation)",
-      "Book Service & Payment",
-      "Service Delivered",
-      "Reports Uploaded",
-      "NRI Receives Notification"
+      "End-to-end Management",
+      "Integrated Care Services",
+      "Real-time Health Reporting",
+      "Dedicated Support",
+      "Peace of Mind Monitoring"
     ]
   },
   {
     "id": "hm-ohr",
-    "name": "HM OHR",
-    "title": "Digital Health Records",
+    "name": "HM OHR – Health Records",
+    "title": "Digital Health Records Management",
     "slug": "hm-ohr",
-    "description": "Secure, centralized digital storage for all your family's medical reports and health history.",
+    "description": "HM OHR is a secure, intelligent health data platform designed to organize, protect, and provide seamless access to your complete medical history—creating a single source of truth for lifelong health management.",
     "icon": "ClipboardList",
     "features": [
-      "Automatic upload of HealthMetro diagnostic reports",
-      "Securely View, Download, or Share records",
-      "Manage records for yourself, family, and parents in one place",
-      "Maintains a complete digital health history"
+      "Structured, centralized medical records",
+      "Secure, cloud-based infrastructure",
+      "Instant access to reports and clinical documents",
+      "Continuous and longitudinal health tracking",
+      "Integrated family health record management"
     ],
     "flow": [
-      "Report Generated",
-      "Report Uploaded to Platform",
-      "Linked to Patient Profile",
-      "User Access (Dashboard)",
-      "View / Download / Share"
-    ]
-  },
-  {
-    "id": "hm-clin",
-    "name": "HM CLIN",
-    "title": "Clinical Research Support",
-    "slug": "hm-clin",
-    "description": "Explore and participate in global clinical studies to contribute to medical advancements.",
-    "icon": "Microscope",
-    "features": [
-      "Discover available clinical research studies",
-      "Read detailed study requirements, objectives, and benefits",
-      "Secure and straightforward application process",
-      "Contribute to global healthcare research safely"
-    ],
-    "flow": [
-      "User opens Clinical Research",
-      "View Available Studies",
-      "Read Study Details",
-      "Apply for Participation"
+      "Centralized Data Storage",
+      "Secure Infrastructure",
+      "Instant Access",
+      "Longitudinal Tracking",
+      "Family Health Integration"
     ]
   }
 ]
+
+
