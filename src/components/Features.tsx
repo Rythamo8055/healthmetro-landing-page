@@ -49,69 +49,6 @@ const services = [
     span: "md:col-span-1",
   },
   {
-    id: "metabolomics",
-    name: "Metabolomics",
-    title: "Biochemical Health Signals",
-    description: "A sophisticated exploration of your body's biochemical activity—revealing health signals at the fundamental, cellular level.",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="3" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="M20 12h2" /><path d="M2 12h2" />
-      </svg>
-    ),
-    color: "bg-primary/10 text-primary",
-    accent: "border-primary/20 hover:border-primary/50",
-    badge: "bg-primary text-white",
-    features: [
-      "Identifies disease signals early",
-      "Advanced cellular intelligence",
-      "Uncovers subtle imbalances",
-      "Proactive health strategies",
-    ],
-    href: "/products/metabolomics",
-  },
-  {
-    id: "multi-omics",
-    name: "Multi-Omics Solutions",
-    title: "Complete View of Health",
-    description: "A unified approach combining genomics, proteomics, and metabolomics for an intelligent view of human health.",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" />
-      </svg>
-    ),
-    color: "bg-secondary/10 text-secondary",
-    accent: "border-secondary/20 hover:border-secondary/50",
-    badge: "bg-secondary text-white",
-    features: [
-      "Biological data integration",
-      "Precision medicine at systems level",
-      "Genetic & protein marker correlation",
-      "Enhanced clinical insights",
-    ],
-    href: "/products/multi-omics",
-  },
-  {
-    id: "genomics",
-    name: "Genomics",
-    title: "Genetic Blueprint Insights",
-    description: "A refined understanding of your genetic blueprint—unlocking insights into inherited risks and health trajectories.",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M4.7 7a3.5 3.5 0 1 1 5.1 4.8L8 14.1l-1.8-2.3L4.7 7Z" /><path d="M19.3 17a3.5 3.5 0 1 1-5.1-4.8L16 9.9l1.8 2.3L19.3 17Z" /><path d="M9.8 11.8 14.2 8.2" /><path d="M14.2 12.2 9.8 15.8" />
-      </svg>
-    ),
-    color: "bg-primary/10 text-primary",
-    accent: "border-primary/20 hover:border-primary/50",
-    badge: "bg-primary text-white",
-    features: [
-      "Advanced genetic risk analysis",
-      "Hereditary condition identification",
-      "Long-term health forecasting",
-      "Personalized healthcare planning",
-    ],
-    href: "/products/genomics",
-  },
-  {
     id: "hm-trust",
     name: "HM TRUST – Doctor Visits",
     title: "Medical Care at Your Doorstep",
